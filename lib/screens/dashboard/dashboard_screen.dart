@@ -42,11 +42,6 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
     try {
       final transactionService = ref.read(TransactionServiceProvider);
 
-      developer.log(
-        '📡 Buscando dados do dashboard...',
-        name: 'DashboardScreen',
-      );
-
       final dashboardData = await transactionService.getDashboardData();
 
       if (mounted) {

@@ -21,7 +21,7 @@ class _ReportsScreenState extends State<ReportsScreen> {
     _carregarTransacoes();
   }
 
-  void _carregarTransacoes() {
+  Future<void> _carregarTransacoes() {
     // TODO: Implementar lógica real de carregamento
     // Filtrando transações entre _dataInicio e _dataFim
     setState(() {
